@@ -2,19 +2,20 @@
 
 int main()
 {
-    int k,r;
-    long int i=0,j=1,f;
+    int i,n, t1= 0, t2 = 1, nextTerm;
 
     printf("Enter the range: ");
-    scanf("%d",&r);
-    printf("Fibonacci series: ");
-    printf("%ld %ld",i,j);
+    scanf("%d", &n);
 
-    for(k=2;k<r;k++){
-        f=i+j;
-        i=j;
-        j=f;
-        printf(" %ld",j);
+    printf("Fibonacci series: ");
+
+    for(i=1;i<n;i++)
+    {
+        printf("%d ", t1);
+        nextTerm = t1 + t2;
+        t1 = t2;
+        t2 = nextTerm;
     }
     return 0;
+
 }
