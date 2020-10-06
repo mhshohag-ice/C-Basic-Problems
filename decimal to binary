@@ -29,3 +29,24 @@ int main()
     decTobinary(n);
     return 0;
 }
+// anotherb method
+#include<stdio.h>
+
+int main()
+{
+    int n,i,j,bin =0,dn;
+    printf("Enter a number to convert: ");
+    scanf("%d", &n);
+
+    dn =n;
+    i =1;
+
+    for(j=n;j>0;j = j/2)
+    {
+        bin = bin + (n%2) * i;
+        i = i*10;
+        n= n/2;
+    }
+    printf("\nThe Binary of %d is %d.\n", dn,bin);
+    return 0;
+}
