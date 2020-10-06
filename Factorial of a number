@@ -2,7 +2,8 @@
 
 int main()
 {
-    int i,f=1,num;
+    int i,num;
+    unsigned long long f =1;
 
     printf("Enter a number: ");
     scanf("%d", &num);
@@ -10,6 +11,6 @@ int main()
     for(i=1;i<=num;i++){
         f = f * i;
     }
-    printf("Factorial of %d is: %d", num, f);
+    printf("Factorial of %d is: %llu", num, f);
     return 0;
 }
