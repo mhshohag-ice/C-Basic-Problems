@@ -1,0 +1,19 @@
+#include<stdio.h>
+
+int main()
+{
+    int num,pow,i=1;
+    long int sum = 1;
+
+    printf("Enter the number and power: ");
+    scanf("%d %d", &num, &pow);
+
+    while(i<=pow)
+    {
+        sum= sum * num;
+        i++;
+    }
+    printf("\n %d to the power %d is: %ld",num,pow,sum);
+    return 0;
+}
+
